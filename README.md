@@ -85,6 +85,23 @@ title's window has focus:
 | F / H | stick clicks |
 | Esc, Tab | Menu, View |
 
+## Helping out
+
+For a code change, pick an [open issue](https://github.com/Marvisak/VIctory/issues)
+and check the [open pull requests](https://github.com/Marvisak/VIctory/pulls) for
+the issue number. If someone already has a patch, testing that patch on a
+different machine can be useful. Otherwise, describe what you plan to try in
+the issue so others can coordinate there.
+
+For a small first test, run `cargo test --locked -p victory-formats --lib` from
+the repository root. This exercises texture and audio formats with synthetic
+data and needs no game installation.
+
+For hardware results, use the [tester thread (#49)](https://github.com/Marvisak/VIctory/issues/49).
+Include the commit, OS, GPU and driver, the last stage you reached, and whether
+the result repeats. Follow the [asset policy](docs/asset-policy.md) when sharing
+diagnostics.
+
 ## Commands
 
 ```
